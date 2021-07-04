@@ -1,0 +1,171 @@
+<!-- contact page -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us | petcity.com</title>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="images/image.png" />
+    </head>
+    <body>
+
+        <header class="navigation">
+            <div class="nav-container">
+              <div class="brand">
+                <a href="#!"><img src="images/image.png" alt=""></a>
+              </div>
+              <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                  
+                  <li>
+                    <a href="index.html" onclick="togglemenu();">Home</a>
+                </li>
+
+                  <li>
+                    <a href="#!">cats</a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="cats.html#catDryFood">dry food</a>
+                      </li>
+                      <li> <a href="cats.html#catWetFood">wet food</a></li>
+                      <li> <a href="cats.html#snacks">snacks</a></li>
+                      <li> <a href="cats.html#beds/furniture">beds/furniture</a></li>
+                      <li> <a href="cats.html#cages">cages</a></li>
+                      <li> <a href="cats.html#catFeeding">feeding/watering supplies</a></li>
+                      <li> <a href="cats.html#collars">collars</a></li>
+                      <li> <a href="cats.html#litter">litters</a></li>
+                      <li> <a href="cats.html#cattoys">toys</a></li>
+                      <li> <a href="cats.html#catshampoo">shampoo</a></li>
+    
+    
+                     
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">dog</a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="dog.html#DryFood">dry food</a>
+                      </li>
+                      <li><a href="dog.html">dry food</a></li>
+                      <li><a href="dog.html#wetFood">wet food</a></li>
+                      <li><a href="dog.html#treats">treats</a></li>
+                      <li><a href="dog.html#beds">beds</a></li>
+                      <li><a href="dog.html#cages">cages</a></li>
+                      <li><a href="dog.html#feeding/wateringSupplies">feeding/watering supplies</a></li>
+                      <li><a href="dog.html#collars">collars</a></li>
+                      <li><a href="dog.html#litter">litters</a></li>
+                      <li><a href="dog.html#shampoo">shampoo</a></li>
+    
+                     
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">services</a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="services.html#catsGrooming">cats grooming</a>
+                      </li>
+                      <li>
+                        <a href="services.html#dogsGrooming">dogs grooming</a>
+                      </li>
+                     
+                    </ul>
+                  </li>
+                  
+                  <li>
+                    <a href="#f1" onclick="togglemenu();">promotion</a>
+                  </li>
+                  <li>
+                    <a href="#!">find pets</a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="pets.html#cats">find cats</a>
+                      </li>
+                      <li>
+                        <a href="pets.html#dogs">find dogs</a>
+                      </li>
+                     
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#!">Others</a>
+                    <ul class="nav-dropdown">
+                      <li>
+                        <a href="location.html">Our Location</a>
+                      </li>
+                      <li>
+                        <a href="index.html">Contact Us</a>
+                      </li>
+                     
+                    </ul>
+                  </li>
+                  
+                  
+                </ul>
+              </nav>
+            </div>
+        </header>
+    
+       <section class="container1 ">
+           <div class="row">
+               <div class="col1">
+                   <img src="images/imggggg.jpeg" alt="">
+                   <!-- <img src="images/image5.jpeg" alt=""> -->
+               </div>
+               <div class="col2" >
+                    <h3>CONTACT US</h3>
+                    <form action="index.html">
+                        <input type="text" placeholder=" Enter Your Name">
+                        <input type="email" placeholder="Enter Your Email">
+                        <input type="text" placeholder="Enter Your Number">
+                        <textarea  cols="30" rows="3" placeholder="Enter Your Message"></textarea>
+                        <button class="submit"> Send Message</button>
+
+                    </form>
+               </div>
+           </div>
+
+       </section>
+    
+        <footer>
+            <p>Copyright &copy; 2021 All rights are reserved </p>
+        </footer>
+    
+        <script>(function($) { 
+          $(function() { 
+         
+            $('nav ul li a:not(:only-child)').click(function(e) {
+              $(this).siblings('.nav-dropdown').toggle();
+              $('.nav-dropdown').not($(this).siblings()).hide();
+              e.stopPropagation();
+            });
+            $('html').click(function() {
+              $('.nav-dropdown').hide();
+            });
+            $('#nav-toggle').click(function() {
+              $('nav ul').slideToggle();
+            });
+            $('#nav-toggle').on('click', function() {
+              this.classList.toggle('active');
+            });
+          }); 
+        })(jQuery); 
+        function togglemenu(){
+                     
+                     var menutoggle = document.querySelector('.toggle');
+                     menutoggle.classList.toggle('active');
+                     var menu = document.querySelector('.menu');
+                     menu.classList.toggle('active');
+      
+                 }
+        
+        </script>
+    </body>
+</html>

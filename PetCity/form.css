@@ -1,0 +1,93 @@
+section h2{
+    background: #7F8280;
+    color: white;
+   display: inline;
+    font-weight: 600;
+    padding: 10px 40px 10px 15px;
+    border-radius: 0px 30px 30px 0px;
+    font-size: 20px;
+    text-align:center;
+}
+    #googlemap{float:right;
+            /*max-width:500px;
+            width: 90%;*/
+            margin-right:110px;
+            margin-top:130px;}
+    #info {width:500px;
+            height:200px;
+            padding: 20px;
+            background-color:#f6edb7;
+            margin: 50px 20px;}
+    #hours {width:500px;
+            height:350px;
+            padding: 20px;
+            background-color:#cae8de;
+            margin: 50px 20px;}
+    main{width:90%;
+        height:420px;
+        padding: 20px 200px 20px;
+        background-color:#c5d3de;
+        margin: 780px 20px 50px 20px;
+        box-sizing:border-box;}
+    section {float:left;
+            max-width:400px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom:50px;
+            margin-top:80px;}
+    label{float: left;
+        display: block;
+        width: 8em;}
+
+input, textarea{display: block;
+                margin-bottom: 1em;
+                box-sizing:border-box;
+                border-radius:5px;
+                width:80%;
+                border:1px solid #7e8180;
+                padding: 8px 20px;}  
+
+#mySubmit{margin-left: 9.6em;
+            width:10%;
+            cursor: pointer;
+            background-color: #abf3ae;
+            color:black;
+            border-color: #abf3ae;}   
+
+#mySubmit:hover {background-color: #1f9625;}
+
+
+@media only screen and (max-width:1024px){
+    main{max-width:500px;
+        min-height:550px;
+        padding: 20px 50px 20px;}
+    form{width:500px;
+        margin:0px;}
+    h1{width:500px;
+        padding-right:0px;
+        text-align:left;}
+    main p{width:500px;}
+    #mySubmit{min-width:100px;}
+    section{margin-top:60px;}
+    #googlemap{max-width:500px;
+        max-height:500px;
+        padding-right:6px;
+        display:none;}
+}
+  @media only screen and (max-width:768px){
+    main{min-width:500px;
+        min-height:550px;
+        padding: 20px 50px 20px;}
+    form{width:500px;
+        margin:0px;}
+    h1{width:500px;
+        padding-right:0px;
+        text-align:left;}
+    main p{width:500px;}
+    #mySubmit{min-width:100px;}
+    section{margin-top:60px;}
+    #googlemap{display:none;
+        max-width:500px;
+        max-height:500px;
+        padding-right:10px;}
+}

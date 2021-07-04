@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dogs | Shampoos </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../products.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="../images/image.png" />
+        
+    </head>
+    <body>
+      <header class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="../index.html"><img src="../images/image.png" alt=""></a>
+          </div>
+          <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+              
+              <li>
+                <a href="#!">cats</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="../cats.html#catDryFood">dry food</a>
+                  </li>
+                  <li> <a href="../cats.html#catWetFood">wet food</a></li>
+                  <li> <a href="../cats.html#snacks">snacks</a></li>
+                  <li> <a href="../cats.html#beds/furniture">beds/furniture</a></li>
+                  <li> <a href="../cats.html#cages">cages</a></li>
+                  <li> <a href="../cats.html#catFeeding">feeding/watering supplies</a></li>
+                  <li> <a href="../cats.html#collars">collars</a></li>
+                  <li> <a href="../cats.html#litter">litters</a></li>
+                  <li> <a href="../cats.html#cattoys">toys</a></li>
+                  <li> <a href="../cats.html#catshampoo">shampoo</a></li>
+
+
+                 
+                </ul>
+              </li>
+              <li>
+                <a href="#!">dog</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="../dog.html#DryFood">dry food</a>
+                  </li>
+                  <li><a href="../dog.html#wetFood">wet food</a></li>
+                  <li><a href="../dog.html#treats">treats</a></li>
+                  <li><a href="../dog.html#beds">beds</a></li>
+                  <li><a href="../dog.html#cages">cages</a></li>
+                  <li><a href="../dog.html#feeding/wateringSupplies">feeding/watering supplies</a></li>
+                  <li><a href="../dog.html#collars">collars</a></li>
+                  <li><a href="../dog.html#litter">litters</a></li>
+                  <li><a href="../dog.html#shampoo">shampoo</a></li>
+
+                 
+                </ul>
+              </li>
+              <li>
+                <a href="#!">services</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="../services.html#catsGrooming">cats grooming</a>
+                  </li>
+                  <li>
+                    <a href="../services.html#dogsGrooming">dogs grooming</a>
+                  </li>
+                 
+                </ul>
+              </li>
+              
+              <li>
+                <a href="../promotions.html" onclick="togglemenu();">promotion</a>
+              </li>
+              <li>
+                <a href="#!">find pets</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="../pets.html#cats">find cats</a>
+                  </li>
+                  <li>
+                    <a href="../pets.html#dogs">find dogs</a>
+                  </li>
+                 
+                </ul>
+              </li>
+              <li>
+                <a href="../store.html" onclick="togglemenu();">others</a>
+              </li>
+              
+      
+            </ul>
+          </nav>
+        </div>
+      </header>      
+        <!--Product content-->
+       <div class="container">
+            <h1 class="main-heading">DOG SHAMPOOS</h1>
+            <div>
+                <img src="../images/image58.jpeg" alt="dog shampoo" >
+            </div>
+            <div class="text">
+              <h3><strong>Paw 2 in 1 Conditioning Shampoo for Normal Skin </strong></h3> 
+              <br>
+              <p><strong>RM21.00</strong></p>
+              <br>
+              <p>Description:</p>
+              <br>
+              <p>Formulated for all dogs that provides pH balanced for all dogs with healthy skin.
+              </p>
+            </div>
+            <a href="" class="cart">
+              <img src="../images/cart.png" alt="cart">
+            </a>
+           </div>
+
+           <footer>
+            <p>Copyright &copy; 2021 All rights are reserved </p>
+        </footer>
+    
+        <script>(function($) { 
+            $(function() { 
+           
+              $('nav ul li a:not(:only-child)').click(function(e) {
+                $(this).siblings('.nav-dropdown').toggle();
+                $('.nav-dropdown').not($(this).siblings()).hide();
+                e.stopPropagation();
+              });
+              $('html').click(function() {
+                $('.nav-dropdown').hide();
+              });
+              $('#nav-toggle').click(function() {
+                $('nav ul').slideToggle();
+              });
+              $('#nav-toggle').on('click', function() {
+                this.classList.toggle('active');
+              });
+            }); 
+          })(jQuery); 
+          function togglemenu(){
+                       
+                       var menutoggle = document.querySelector('.toggle');
+                       menutoggle.classList.toggle('active');
+                       var menu = document.querySelector('.menu');
+                       menu.classList.toggle('active');
+        
+                   }
+          
+          </script>
+           
+     
+
+      
+    </body>
+    
+</html>
