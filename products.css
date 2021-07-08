@@ -278,11 +278,57 @@ html, body {height: 100%; width: 100%;}
 }
 
 
+/*tablet screen*/
+@media only screen and (max-width:1024px){
+  .container {
+    position:relative;
+    display:flex;
+    height: 900px;
+    min-height: 100%;
+  }
+  
+
+  .container .main-heading{
+    display:block;
+    position: absolute;
+    left: 370px;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  .container img{
+    width: 325px;
+    height: 250px;
+    align-self: center;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 175px;
+    left: 260px;
+  }
 
 
+.container .text {
+  top: 450px;
+  left: 220px;
+  width: 400px; 
+  text-align: center;
+  font-size: 5mm;
+  
+}
 
+.container .cart img{
+    width: 150px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 750px;
+    left: 350px;
+}
+}
 
-@media only screen and (max-width: 600px) {
+/*smartphone screen*/
+@media only screen and (max-width: 768px) {
   .container {
     position:relative;
     display:flex;
@@ -313,7 +359,7 @@ html, body {height: 100%; width: 100%;}
 
 
 .container .text {
-  position: absolute;
+  text-align: left;
   top: 450px;
   left: 50px;
   width: 400px; 
@@ -327,7 +373,7 @@ html, body {height: 100%; width: 100%;}
     margin: auto;
     position: absolute;
     top: 750px;
-    right: -400px;
+    left: 150px;
 }
 
 }
